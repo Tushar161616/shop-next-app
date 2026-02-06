@@ -43,7 +43,7 @@ const Signup = () => {
     
             
             
-        } catch (error) {
+        } catch (error:any) {
             // console.log(error);
             setErr(error?.response?.data?.message || "signup error");
             

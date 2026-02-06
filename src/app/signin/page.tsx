@@ -41,7 +41,7 @@ const Signin = () => {
            await router.push("/")
             
             
-        } catch (error) {
+        } catch (error:any) {
             // console.log(error);
             setErr(error.response.data.message);
           
