@@ -11,9 +11,9 @@ import { signIn, useSession } from 'next-auth/react';
 const Signin = () => {
     let [show,setShow] = useState(false);
     const router = useRouter();
-    let [err,setErr] = useState("");
-    let [email,setEmail] = useState();
-    let [password,setPassword] = useState();
+    let [err,setErr] = useState<string>("");
+    let [email,setEmail] = useState<string>();
+    let [password,setPassword] = useState<string>();
     let [msg,setMsg] = useState("");
     let sesion = useSession();
     console.log(sesion.data?.user);

@@ -11,12 +11,12 @@ import { signIn } from 'next-auth/react';
 const Signup = () => {
   const router = useRouter();
     let [show,setShow] = useState(false);
-    let [uname,setUname] = useState();
-    let [email,setEmail] = useState();
-    let [number,setNumber] = useState();
-    let [password,setPassword] = useState();
-    let [msg,setMsg] = useState("");
-    let [err,setErr] = useState("");
+    let [uname,setUname] = useState<string>();
+    let [email,setEmail] = useState<string>();
+    let [number,setNumber] = useState<string>();
+    let [password,setPassword] = useState<string>();
+    let [msg,setMsg] = useState<string>("");
+    let [err,setErr] = useState<string>("");
    
 
     const  handleSignup = async (e : React.FormEvent) => {
